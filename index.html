@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🎵 Music Playlist</h1>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search songs..."
+            >
+        </header>
+
+        <main>
+
+            <section class="player">
+
+                <img id="cover" src="cover.jpg" alt="Album Cover">
+
+                <h2 id="songTitle">Song Title</h2>
+                <p id="artist">Artist</p>
+
+                <div class="progress-container">
+                    <span id="currentTime">0:00</span>
+
+                    <input
+                        type="range"
+                        id="progress"
+                        value="0"
+                        min="0"
+                        max="100"
+                    >
+
+                    <span id="duration">0:00</span>
+                </div>
+
+                <div class="controls">
+                    <button id="prevBtn">⏮</button>
+                    <button id="playBtn">▶</button>
+                    <button id="nextBtn">⏭</button>
+                </div>
+
+                <div class="volume">
+                    <span>🔊</span>
+
+                    <input
+                        type="range"
+                        id="volume"
+                        min="0"
+                        max="1"
+                        step="0.01"
+                        value="1"
+                    >
+                </div>
+
+            </section>
+
+            <section class="playlist">
+
+                <h2>Playlist</h2>
+
+                <ul id="playlist">
+
+                    <li class="song" data-index="0">
+                        <div>
+                            <strong>Song One</strong>
+                            <span>Artist One</span>
+                        </div>
+
+                        <div class="song-actions">
+                            <button class="favorite">♡</button>
+                            <button class="remove">×</button>
+                        </div>
+                    </li>
+
+                    <li class="song" data-index="1">
+                        <div>
+                            <strong>Song Two</strong>
+                            <span>Artist Two</span>
+                        </div>
+
+                        <div class="song-actions">
+                            <button class="favorite">♡</button>
+                            <button class="remove">×</button>
+                        </div>
+                    </li>
+
+                    <li class="song" data-index="2">
+                        <div>
+                            <strong>Song Three</strong>
+                            <span>Artist Three</span>
+                        </div>
+
+                        <div class="song-actions">
+                            <button class="favorite">♡</button>
+                            <button class="remove">×</button>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <audio id="audioPlayer"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
