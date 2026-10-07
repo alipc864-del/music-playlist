@@ -33,6 +33,15 @@ Each song has its own cover image and theme color. When the song changes, the in
 
 ## 📁 Project Structure
 
+
+## 🌐 Live Demo
+
+[View Live Demo](https://alipc864-del.github.io/music-playlist/)
+
+## 👨‍💻 Author
+
+Mahziar
+
 ```text
 music-playlist/
 │
@@ -50,10 +59,4 @@ music-playlist/
 
 
 
-## 🌐 Live Demo
 
-[View Live Demo](https://alipc864-del.github.io/music-playlist/)
-
-## 👨‍💻 Author
-
-Mahziar
